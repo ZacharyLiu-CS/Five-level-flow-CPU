@@ -1,0 +1,706 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Dec 24 19:27:20 2017
+# Process ID: 3644
+# Current directory: D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1/top.vds
+# Journal file: D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7976 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 307.219 ; gain = 74.438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/top.v:22]
+INFO: [Synth 8-638] synthesizing module 'mips' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/mips.v:23]
+INFO: [Synth 8-638] synthesizing module 'controller' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/controller.v:23]
+INFO: [Synth 8-638] synthesizing module 'maindec' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/main_decoder.v:22]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/main_decoder.v:22]
+INFO: [Synth 8-638] synthesizing module 'aludec' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/alu_decoder.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/alu_decoder.v:93]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/alu_decoder.v:23]
+INFO: [Synth 8-638] synthesizing module 'floprc' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/floprc.v:22]
+	Parameter WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'floprc' (3#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/floprc.v:22]
+WARNING: [Synth 8-689] width (15) of port connection 'd' does not match port width (20) of module 'floprc' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/controller.v:66]
+WARNING: [Synth 8-689] width (15) of port connection 'q' does not match port width (20) of module 'floprc' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/controller.v:67]
+WARNING: [Synth 8-689] width (5) of port connection 'd' does not match port width (20) of module 'floprc' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/controller.v:72]
+WARNING: [Synth 8-689] width (5) of port connection 'q' does not match port width (20) of module 'floprc' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/controller.v:73]
+INFO: [Synth 8-638] synthesizing module 'flopr' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopr.v:22]
+	Parameter WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopr.v:22]
+WARNING: [Synth 8-689] width (4) of port connection 'd' does not match port width (20) of module 'flopr' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/controller.v:78]
+WARNING: [Synth 8-689] width (4) of port connection 'q' does not match port width (20) of module 'flopr' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/controller.v:79]
+INFO: [Synth 8-256] done synthesizing module 'controller' (5#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/controller.v:23]
+INFO: [Synth 8-638] synthesizing module 'datapath' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/datapath.v:1]
+INFO: [Synth 8-638] synthesizing module 'hazard' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/hazard.v:23]
+INFO: [Synth 8-256] done synthesizing module 'hazard' (6#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/hazard.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux2' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/mux2.v:22]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (7#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/mux2.v:22]
+INFO: [Synth 8-638] synthesizing module 'regfile' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/reg_file.v:23]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (8#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/reg_file.v:23]
+INFO: [Synth 8-638] synthesizing module 'hilo_reg' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/hilo_reg.v:3]
+INFO: [Synth 8-256] done synthesizing module 'hilo_reg' (9#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/hilo_reg.v:3]
+INFO: [Synth 8-638] synthesizing module 'flopenr' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopenr.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopenr' (10#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopenr.v:23]
+INFO: [Synth 8-638] synthesizing module 'adder' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/adder.v:24]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (11#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/adder.v:24]
+INFO: [Synth 8-638] synthesizing module 'flopenrc' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopenrc.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopenrc' (12#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopenrc.v:23]
+INFO: [Synth 8-638] synthesizing module 'signext' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/signext.v:22]
+INFO: [Synth 8-256] done synthesizing module 'signext' (13#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/signext.v:22]
+INFO: [Synth 8-638] synthesizing module 'sl2' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/sl2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sl2' (14#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/sl2.v:23]
+INFO: [Synth 8-638] synthesizing module 'eqcmp' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/eqcmp.v:22]
+INFO: [Synth 8-256] done synthesizing module 'eqcmp' (15#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/eqcmp.v:22]
+INFO: [Synth 8-638] synthesizing module 'flopenrc__parameterized0' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopenrc.v:23]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopenrc__parameterized0' (15#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopenrc.v:23]
+INFO: [Synth 8-638] synthesizing module 'flopenrc__parameterized1' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopenrc.v:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopenrc__parameterized1' (15#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopenrc.v:23]
+INFO: [Synth 8-638] synthesizing module 'flopenrc__parameterized2' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopenrc.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopenrc__parameterized2' (15#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopenrc.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'q' does not match port width (32) of module 'flopenrc' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/datapath.v:137]
+INFO: [Synth 8-638] synthesizing module 'mux3' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/mux3.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux3' (16#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/mux3.v:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/alu.v:22]
+INFO: [Synth 8-256] done synthesizing module 'alu' (17#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/alu.v:22]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized0' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/mux2.v:22]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized0' (17#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/mux2.v:22]
+INFO: [Synth 8-638] synthesizing module 'floprc__parameterized0' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/floprc.v:22]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'floprc__parameterized0' (17#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/floprc.v:22]
+INFO: [Synth 8-638] synthesizing module 'floprc__parameterized1' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/floprc.v:22]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'floprc__parameterized1' (17#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/floprc.v:22]
+INFO: [Synth 8-638] synthesizing module 'floprc__parameterized2' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/floprc.v:22]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'floprc__parameterized2' (17#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/floprc.v:22]
+INFO: [Synth 8-638] synthesizing module 'flopr__parameterized0' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopr.v:22]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr__parameterized0' (17#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopr.v:22]
+INFO: [Synth 8-638] synthesizing module 'flopr__parameterized1' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopr.v:22]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr__parameterized1' (17#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopr.v:22]
+INFO: [Synth 8-638] synthesizing module 'flopr__parameterized2' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopr.v:22]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr__parameterized2' (17#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopr.v:22]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (18#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/datapath.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mips' (19#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/mips.v:23]
+INFO: [Synth 8-638] synthesizing module 'inst_mem' [D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1/.Xil/Vivado-3644-DESKTOP-827S4F3/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'inst_mem' (20#1) [D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1/.Xil/Vivado-3644-DESKTOP-827S4F3/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'data_mem' [D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1/.Xil/Vivado-3644-DESKTOP-827S4F3/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'data_mem' (21#1) [D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1/.Xil/Vivado-3644-DESKTOP-827S4F3/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'top' (22#1) [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/top.v:22]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port jalD
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 347.297 ; gain = 114.516
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 347.297 ; gain = 114.516
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1/.Xil/Vivado-3644-DESKTOP-827S4F3/dcp5/inst_mem_in_context.xdc] for cell 'imem'
+Finished Parsing XDC File [D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1/.Xil/Vivado-3644-DESKTOP-827S4F3/dcp5/inst_mem_in_context.xdc] for cell 'imem'
+Parsing XDC File [D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1/.Xil/Vivado-3644-DESKTOP-827S4F3/dcp7/data_mem_in_context.xdc] for cell 'dmem'
+Finished Parsing XDC File [D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1/.Xil/Vivado-3644-DESKTOP-827S4F3/dcp7/data_mem_in_context.xdc] for cell 'dmem'
+Parsing XDC File [D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 654.777 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 654.777 ; gain = 421.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 654.777 ; gain = 421.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for dmem. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for imem. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 654.777 ; gain = 421.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "lw_format" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw_format" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "R_format" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "alusrc_format" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "jal_format" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "alu_control" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hi_alu_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lo_alu_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/alu.v:70]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_control_reg' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/imports/new/alu_decoder.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_out_reg' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/alu.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'hi_alu_out_reg' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/alu.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'lo_alu_out_reg' [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/alu.v:48]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 654.777 ; gain = 421.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 3     
+	               32 Bit    Registers := 11    
+	               20 Bit    Registers := 3     
+	                5 Bit    Registers := 6     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 18    
+	   4 Input     32 Bit        Muxes := 4     
+	  33 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 2     
+	  29 Input      8 Bit        Muxes := 1     
+	  25 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 4     
+	  33 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 27    
+	   5 Input      1 Bit        Muxes := 1     
+	  33 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module aludec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  29 Input      8 Bit        Muxes := 1     
+	  25 Input      8 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module floprc 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+Module flopr 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+Module hazard 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module flopenr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module flopenrc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module signext 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module flopenrc__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flopenrc__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flopenrc__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Muxes : 
+	  33 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	  33 Input      2 Bit        Muxes := 1     
+	  33 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module floprc__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module floprc__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module floprc__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module flopr__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+Module flopr__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module flopr__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "hi_alu_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lo_alu_out" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP alu_out0, operation Mode is: A*B.
+DSP Report: operator alu_out0 is absorbed into DSP alu_out0.
+DSP Report: operator alu_out0 is absorbed into DSP alu_out0.
+DSP Report: Generating DSP alu_out0, operation Mode is: A*B.
+DSP Report: operator alu_out0 is absorbed into DSP alu_out0.
+DSP Report: operator alu_out0 is absorbed into DSP alu_out0.
+DSP Report: Generating DSP alu_out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator alu_out0 is absorbed into DSP alu_out0.
+DSP Report: operator alu_out0 is absorbed into DSP alu_out0.
+WARNING: [Synth 8-6014] Unused sequential element r7E/q_reg was removed.  [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopenrc.v:30]
+WARNING: [Synth 8-6014] Unused sequential element r9E/q_reg was removed.  [D:/Xilinx/singel_cpu/project_1/project_1.srcs/sources_1/new/flopenrc.v:30]
+INFO: [Synth 8-5544] ROM "mips/c/Maindec/alusrc_format" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mips/c/Maindec/lw_format" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mips/c/Maindec/R_format" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design datapath has unconnected port jalD
+WARNING: [Synth 8-3332] Sequential element (mips/c/regE/q_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regE/q_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regE/q_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regE/q_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regE/q_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regM/q_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/regW/q_reg[4]) is unused and will be removed from module top.
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[16]' (FDCE) to 'mips/dp/r3E/q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[17]' (FDCE) to 'mips/dp/r3E/q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[18]' (FDCE) to 'mips/dp/r3E/q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[19]' (FDCE) to 'mips/dp/r3E/q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[20]' (FDCE) to 'mips/dp/r3E/q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[21]' (FDCE) to 'mips/dp/r3E/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[22]' (FDCE) to 'mips/dp/r3E/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[23]' (FDCE) to 'mips/dp/r3E/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[24]' (FDCE) to 'mips/dp/r3E/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[25]' (FDCE) to 'mips/dp/r3E/q_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[26]' (FDCE) to 'mips/dp/r3E/q_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[27]' (FDCE) to 'mips/dp/r3E/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[28]' (FDCE) to 'mips/dp/r3E/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[29]' (FDCE) to 'mips/dp/r3E/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[30]' (FDCE) to 'mips/dp/r3E/q_reg[31]'
+WARNING: [Synth 8-3332] Sequential element (q_reg[31]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[30]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[29]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[28]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[27]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[26]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[25]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[24]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[23]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[22]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[21]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[20]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[19]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[18]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[17]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[16]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[15]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[14]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[13]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[12]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[11]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[10]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[9]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[8]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[7]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[6]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[5]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[4]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[3]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[2]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[1]) is unused and will be removed from module flopenrc.
+WARNING: [Synth 8-3332] Sequential element (q_reg[0]) is unused and will be removed from module flopenrc.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 654.777 ; gain = 421.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-------------+------------+-----------+----------------------+---------------+
+|Module Name  | RTL Object | Inference | Size (Depth x Width) | Primitives    | 
++-------------+------------+-----------+----------------------+---------------+
+|\mips/dp /rf | rf_reg     | Implied   | 32 x 32              | RAM32M x 12   | 
++-------------+------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 728.434 ; gain = 495.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 731.441 ; gain = 498.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (mips/dp/pcreg/q_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/dp/pcreg/q_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/dp/r1D/q_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/dp/r1D/q_reg[0]) is unused and will be removed from module top.
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[8]' (FDCE) to 'mips/dp/r10E/q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[12]' (FDCE) to 'mips/dp/r6E/q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[10]' (FDCE) to 'mips/dp/r10E/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[6]' (FDCE) to 'mips/dp/r10E/q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[14]' (FDCE) to 'mips/dp/r6E/q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[9]' (FDCE) to 'mips/dp/r10E/q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[13]' (FDCE) to 'mips/dp/r6E/q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[11]' (FDCE) to 'mips/dp/r6E/q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[7]' (FDCE) to 'mips/dp/r10E/q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[15]' (FDCE) to 'mips/dp/r6E/q_reg[4]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 814.602 ; gain = 581.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 814.602 ; gain = 581.820
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 814.602 ; gain = 581.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 814.602 ; gain = 581.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 814.602 ; gain = 581.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 814.602 ; gain = 581.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 814.602 ; gain = 581.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |inst_mem      |         1|
+|2     |data_mem      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |data_mem |     1|
+|2     |inst_mem |     1|
+|3     |BUFG     |     4|
+|4     |CARRY4   |   335|
+|5     |DSP48E1  |     3|
+|6     |LUT1     |    96|
+|7     |LUT2     |   378|
+|8     |LUT3     |  1258|
+|9     |LUT4     |   166|
+|10    |LUT5     |   210|
+|11    |LUT6     |   869|
+|12    |MUXF7    |     1|
+|13    |RAM32M   |    12|
+|14    |FDCE     |   537|
+|15    |FDRE     |    64|
+|16    |LD       |   104|
+|17    |IBUF     |     2|
+|18    |OBUF     |    65|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------+----------------------------+------+
+|      |Instance           |Module                      |Cells |
++------+-------------------+----------------------------+------+
+|1     |top                |                            |  4168|
+|2     |  mips             |mips                        |  4032|
+|3     |    c              |controller                  |   409|
+|4     |      Aludec       |aludec                      |    16|
+|5     |      regE         |floprc                      |   384|
+|6     |      regM         |floprc_14                   |     5|
+|7     |      regW         |flopr                       |     4|
+|8     |    dp             |datapath                    |  3622|
+|9     |      r1E          |flopenrc                    |    32|
+|10    |      alu          |alu                         |  1494|
+|11    |      comp         |eqcmp                       |    24|
+|12    |      forwardaemux |mux3                        |    28|
+|13    |      forwardbemux |mux3_0                      |     8|
+|14    |      forwardhimux |mux3_1                      |    33|
+|15    |      forwardlomux |mux3_2                      |    33|
+|16    |      hilo         |hilo_reg                    |    64|
+|17    |      pcadd1       |adder                       |     9|
+|18    |      pcadd2       |adder_3                     |    38|
+|19    |      pcreg        |flopenr                     |    59|
+|20    |      r10E         |flopenrc__parameterized1    |   162|
+|21    |      r13E         |flopenrc__parameterized0    |   128|
+|22    |      r1D          |flopenr_4                   |    30|
+|23    |      r1M          |floprc__parameterized1      |    64|
+|24    |      r1W          |flopr__parameterized1       |    32|
+|25    |      r2D          |flopenrc_5                  |   299|
+|26    |      r2E          |flopenrc_6                  |    32|
+|27    |      r2M          |floprc__parameterized1_7    |    64|
+|28    |      r2W          |flopr__parameterized1_8     |    32|
+|29    |      r3E          |flopenrc_9                  |   158|
+|30    |      r3M          |floprc__parameterized2      |     7|
+|31    |      r3W          |flopr__parameterized2       |     5|
+|32    |      r4E          |flopenrc__parameterized1_10 |   440|
+|33    |      r4M          |floprc__parameterized0      |   128|
+|34    |      r4W          |flopr__parameterized0       |    64|
+|35    |      r5E          |flopenrc__parameterized1_11 |    63|
+|36    |      r6E          |flopenrc__parameterized1_12 |     8|
+|37    |      resmux       |mux2                        |    32|
+|38    |      rf           |regfile                     |    12|
+|39    |      srcbmux      |mux2_13                     |    36|
+|40    |      wrmux        |mux2__parameterized0        |     4|
++------+-------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 814.602 ; gain = 581.820
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 79 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 814.602 ; gain = 274.340
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 814.602 ; gain = 581.820
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 456 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 116 instances were transformed.
+  LD => LDCE: 104 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+114 Infos, 89 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 814.602 ; gain = 588.348
+INFO: [Common 17-1381] The checkpoint 'D:/Xilinx/singel_cpu/project_1/project_1.runs/synth_1/top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 814.602 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 24 19:28:17 2017...

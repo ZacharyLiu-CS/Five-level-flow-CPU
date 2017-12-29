@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Dec 26 21:02:54 2017
+# Process ID: 40072
+# Current directory: C:/Users/GlommyHand/Desktop/Workstation/Git/Five-level-flow-CPU/Five-level-flow-CPU.runs/data_mem_synth_1
+# Command line: vivado.exe -log data_mem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_mem.tcl
+# Log file: C:/Users/GlommyHand/Desktop/Workstation/Git/Five-level-flow-CPU/Five-level-flow-CPU.runs/data_mem_synth_1/data_mem.vds
+# Journal file: C:/Users/GlommyHand/Desktop/Workstation/Git/Five-level-flow-CPU/Five-level-flow-CPU.runs/data_mem_synth_1\vivado.jou
+#-----------------------------------------------------------
+source data_mem.tcl -notrace

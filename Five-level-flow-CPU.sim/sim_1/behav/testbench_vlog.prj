@@ -1,0 +1,35 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/reg_file.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/hazard.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/floprc.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/sl2.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/signext.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/mux3.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/instdec.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/hilo_reg.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/eqcmp.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/divider_Primary.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/cp0_reg.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/alu.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/adder.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/exception.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/imports/new/alu_decoder.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/mux2.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/flopenr.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/flopenrc.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/imports/new/main_decoder.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/datapath.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/imports/new/controller.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/ip/inst_mem/sim/inst_mem.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/ip/data_mem/sim/data_mem.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/mips.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/readdHandle.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/new/writedHandle.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sources_1/imports/new/top.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+verilog xil_defaultlib  "../../../Five-level-flow-CPU.srcs/sim_1/new/testbench.v" --include "../../../Five-level-flow-CPU.srcs/sources_1/imports/new"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

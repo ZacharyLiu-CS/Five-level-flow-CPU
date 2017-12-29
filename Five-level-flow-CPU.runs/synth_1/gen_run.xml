@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1514114839">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/inst_mem/inst_mem.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../singel_cpu/project_1/project_1.srcs/sources_1/ip/inst_mem/inst_mem.xci"/>
+        <Attr Name="ImportTime" Val="1514288442"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../MIPS_2017/proj_4.srcs/sources_1/new/adder.v"/>
+        <Attr Name="ImportTime" Val="1511592774"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/defines.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../singel_cpu/project_1/project_1.srcs/sources_1/imports/new/defines.vh"/>
+        <Attr Name="ImportTime" Val="1514287814"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../MIPS_2017/proj_4.srcs/sources_1/new/alu.v"/>
+        <Attr Name="ImportTime" Val="1511593045"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/alu_decoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../proj_3/proj_3.srcs/sources_1/new/alu_decoder.v"/>
+        <Attr Name="ImportTime" Val="1511342699"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../proj_3/proj_3.srcs/sources_1/new/controller.v"/>
+        <Attr Name="ImportTime" Val="1511350025"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/datapath.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../MIPS_2017/proj_4.srcs/sources_1/new/datapath.v"/>
+        <Attr Name="ImportTime" Val="1511592697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/eqcmp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../singel_cpu/project_1/project_1.srcs/sources_1/new/eqcmp.v"/>
+        <Attr Name="ImportTime" Val="1514210938"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/flopenr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../singel_cpu/project_1/project_1.srcs/sources_1/new/flopenr.v"/>
+        <Attr Name="ImportTime" Val="1513343462"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/flopenrc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../singel_cpu/project_1/project_1.srcs/sources_1/new/flopenrc.v"/>
+        <Attr Name="ImportTime" Val="1513864682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/flopr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../MIPS_2017/proj_4.srcs/sources_1/new/flopr.v"/>
+        <Attr Name="ImportTime" Val="1511592826"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/floprc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../singel_cpu/project_1/project_1.srcs/sources_1/new/floprc.v"/>
+        <Attr Name="ImportTime" Val="1514012970"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hazard.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../singel_cpu/project_1/project_1.srcs/sources_1/new/hazard.v"/>
+        <Attr Name="ImportTime" Val="1514287566"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hilo_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../singel_cpu/project_1/project_1.srcs/sources_1/new/hilo_reg.v"/>
+        <Attr Name="ImportTime" Val="1514040918"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/main_decoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../proj_3/proj_3.srcs/sources_1/new/main_decoder.v"/>
+        <Attr Name="ImportTime" Val="1511342663"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mips.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../MIPS_2017/proj_4.srcs/sources_1/new/mips.v"/>
+        <Attr Name="ImportTime" Val="1511591687"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mux2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../MIPS_2017/proj_4.srcs/sources_1/new/mux2.v"/>
+        <Attr Name="ImportTime" Val="1511592619"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mux3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../singel_cpu/project_1/project_1.srcs/sources_1/new/mux3.v"/>
+        <Attr Name="ImportTime" Val="1513349484"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reg_file.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../MIPS_2017/proj_4.srcs/sources_1/new/reg_file.v"/>
+        <Attr Name="ImportTime" Val="1511396898"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/signext.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../MIPS_2017/proj_4.srcs/sources_1/new/signext.v"/>
+        <Attr Name="ImportTime" Val="1511592462"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sl2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../MIPS_2017/proj_4.srcs/sources_1/new/sl2.v"/>
+        <Attr Name="ImportTime" Val="1511592535"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../proj_3/proj_3.srcs/sources_1/new/top.v"/>
+        <Attr Name="ImportTime" Val="1511357176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/instdec.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../singel_cpu/project_1/project_1.srcs/sources_1/new/instdec.v"/>
+        <Attr Name="ImportTime" Val="1514286902"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clk_div.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../proj_3/proj_3.srcs/sources_1/new/clk_div.v"/>
+        <Attr Name="ImportTime" Val="1511355851"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/mipstest.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../MIPS_2017/proj_4.srcs/sources_1/imports/new/mipstest.coe"/>
+        <Attr Name="ImportTime" Val="1510724720"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="data_mem"/>
+</GenRun>

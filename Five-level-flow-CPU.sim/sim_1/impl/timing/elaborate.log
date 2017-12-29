@@ -1,0 +1,86 @@
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto 80034ea27cc54ddf873ccfef81397b86 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/dut".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/dut".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(DOA_REG=0,DOB...
+Compiling module simprims_ver.RAMB36E1(RDADDR_COLLISION_HWCONF...
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module xil_defaultlib.data_mem_blk_mem_gen_prim_wrappe...
+Compiling module xil_defaultlib.data_mem_blk_mem_gen_prim_width
+Compiling module xil_defaultlib.data_mem_blk_mem_gen_generic_cst...
+Compiling module xil_defaultlib.data_mem_blk_mem_gen_top
+Compiling module xil_defaultlib.data_mem_blk_mem_gen_v8_3_6_synt...
+Compiling module xil_defaultlib.data_mem_blk_mem_gen_v8_3_6
+Compiling module xil_defaultlib.data_mem
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(DOA_REG=0,DOB...
+Compiling module simprims_ver.RAMB36E1(INIT_00=256'b0110010000...
+Compiling module xil_defaultlib.inst_mem_blk_mem_gen_prim_wrappe...
+Compiling module xil_defaultlib.inst_mem_blk_mem_gen_prim_width
+Compiling module xil_defaultlib.inst_mem_blk_mem_gen_generic_cst...
+Compiling module xil_defaultlib.inst_mem_blk_mem_gen_top
+Compiling module xil_defaultlib.inst_mem_blk_mem_gen_v8_3_6_synt...
+Compiling module xil_defaultlib.inst_mem_blk_mem_gen_v8_3_6
+Compiling module xil_defaultlib.inst_mem
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.floprc
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.flopr__parameterized0
+Compiling module xil_defaultlib.controller
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.eqcmp
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.adder_0
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.flopenr
+Compiling module xil_defaultlib.flopenr_1
+Compiling module xil_defaultlib.floprc__parameterized0
+Compiling module xil_defaultlib.flopr__parameterized1
+Compiling module xil_defaultlib.flopr__parameterized1_2
+Compiling module xil_defaultlib.flopenrc
+Compiling module xil_defaultlib.floprc__parameterized0_3
+Compiling module xil_defaultlib.flopr__parameterized1_4
+Compiling module xil_defaultlib.flopr__parameterized1_5
+Compiling module xil_defaultlib.floprc__parameterized0_6
+Compiling module xil_defaultlib.flopr__parameterized2
+Compiling module xil_defaultlib.flopr__parameterized2_7
+Compiling module xil_defaultlib.floprc__parameterized1
+Compiling module xil_defaultlib.floprc__parameterized1_8
+Compiling module simprims_ver.RAMD32(IS_CLK_INVERTED=1'b1)
+Compiling module simprims_ver.RAMS32(IS_CLK_INVERTED=1'b1)
+Compiling module xil_defaultlib.RAM32M_UNIQ_BASE_
+Compiling module xil_defaultlib.RAM32M_HD1
+Compiling module xil_defaultlib.RAM32M_HD2
+Compiling module xil_defaultlib.RAM32M_HD3
+Compiling module xil_defaultlib.RAM32M_HD4
+Compiling module xil_defaultlib.RAM32M_HD5
+Compiling module xil_defaultlib.RAM32M_HD6
+Compiling module xil_defaultlib.RAM32M_HD7
+Compiling module xil_defaultlib.RAM32M_HD8
+Compiling module xil_defaultlib.RAM32M_HD9
+Compiling module xil_defaultlib.RAM32M_HD10
+Compiling module xil_defaultlib.RAM32M_HD11
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_time_impl

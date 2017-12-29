@@ -1,0 +1,7 @@
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+WARNING: "C:\Xilinx\Vivado\2017.1\data/verilog/src/unisims/FDCE.v" Line 152: Timing violation in scope /testbench/dut/mips/c/regE/q_reg[3]/TChk152_3773 at time 204843 ps $recrem (negedge CLR,posedge C,(0:0:0),(0:0:0),notifier,rst_clk_enable_p,rst_clk_enable_p,CLR_dly,C_dly) 
+Simulation Failed
+Simulation Failed
+WARNING: "C:\Xilinx\Vivado\2017.1\data/verilog/src/unisims/RAMB36E1.v" Line 1329: Timing violation in scope /testbench/dut/dmem/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/TChk1329_3387 at time 645219 ps $setuphold (posedge CLKARDCLK,negedge DIADI,(0:0:0),(0:0:0),notifier_a,diadi0_enable_p,diadi0_enable_p,CLKARDCLK_delay,DIADI_delay) 
+Simulation Failed

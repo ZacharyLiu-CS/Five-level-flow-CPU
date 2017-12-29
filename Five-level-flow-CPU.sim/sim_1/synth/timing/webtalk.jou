@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Dec 26 17:00:39 2017
+# Process ID: 1888
+# Current directory: D:/Xilinx/singel_cpu/project_1/project_1.sim/sim_1/synth/timing
+# Command line: wbtcv.exe -mode batch -source D:/Xilinx/singel_cpu/project_1/project_1.sim/sim_1/synth/timing/xsim.dir/testbench_time_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Xilinx/singel_cpu/project_1/project_1.sim/sim_1/synth/timing/webtalk.log
+# Journal file: D:/Xilinx/singel_cpu/project_1/project_1.sim/sim_1/synth/timing\webtalk.jou
+#-----------------------------------------------------------
+source D:/Xilinx/singel_cpu/project_1/project_1.sim/sim_1/synth/timing/xsim.dir/testbench_time_synth/webtalk/xsim_webtalk.tcl -notrace

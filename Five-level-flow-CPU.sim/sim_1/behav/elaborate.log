@@ -1,0 +1,74 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 88f75919ec2a4dcbb064f22495e181f7 --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_3_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 17 differs from formal bit length 30 for port d [C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/imports/new/controller.v:78]
+WARNING: [VRFC 10-278] actual bit length 17 differs from formal bit length 30 for port q [C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/imports/new/controller.v:79]
+WARNING: [VRFC 10-278] actual bit length 14 differs from formal bit length 30 for port d [C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/imports/new/controller.v:84]
+WARNING: [VRFC 10-278] actual bit length 14 differs from formal bit length 30 for port q [C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/imports/new/controller.v:85]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 30 for port d [C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/imports/new/controller.v:90]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 30 for port q [C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/imports/new/controller.v:91]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 64 for port d [C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/new/datapath.v:228]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port d [C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/new/datapath.v:237]
+WARNING: [VRFC 10-278] actual bit length 33 differs from formal bit length 32 for port pcplus8E [C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/new/datapath.v:254]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port d2 [C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/new/datapath.v:263]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port d [C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/new/datapath.v:272]
+WARNING: [VRFC 10-278] actual bit length 33 differs from formal bit length 32 for port d [C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/new/datapath.v:274]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/new/datapath.v" Line 2. Module datapath doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/new/divider_Primary.v" Line 35. Module divider_Primary doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/new/datapath.v" Line 2. Module datapath doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/GlommyHand/Desktop/Workstation/Git/Bus_CPU/Five-level-flow-CPU.srcs/sources_1/new/divider_Primary.v" Line 35. Module divider_Primary doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.flopenrc(WIDTH=30)
+Compiling module xil_defaultlib.flopenr(WIDTH=30)
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.hazard
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux3(WIDTH=32)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.flopenr
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.flopenrc
+Compiling module xil_defaultlib.flopenrc(WIDTH=8)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.eqcmp
+Compiling module xil_defaultlib.instdec
+Compiling module xil_defaultlib.flopenrc(WIDTH=64)
+Compiling module xil_defaultlib.flopenrc(WIDTH=5)
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.divider_Primary
+Compiling module xil_defaultlib.mux3(WIDTH=5)
+Compiling module xil_defaultlib.exception
+Compiling module xil_defaultlib.floprc(WIDTH=64)
+Compiling module xil_defaultlib.floprc
+Compiling module xil_defaultlib.floprc(WIDTH=5)
+Compiling module xil_defaultlib.cp0_reg
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.mips
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_mem
+Compiling module xil_defaultlib.writedHandle
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5(C_FAMILY="art...
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.readdHandle
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
